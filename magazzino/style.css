@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(../fonts/JetBrainsMono-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "OpenDyslexic Mono";
+    src: url(../fonts/OpenDyslexicMono-Regular.woff2) format("woff2");
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "JetBrains Mono";
+    margin: 0;
+    background-color: #211e20;
+}
+
+header {
+    height: 13%;
+    color: #a0a08b;
+    display: block;
+    /* box-shadow: 0px 1px 0px 1px !important; /* S1m0Rembr: hor offset, ver offset, blu amount, rad amount */
+    border-bottom: 2px solid;
+    border-color: #555568;
+}
+
+#dyslexia-toggle {
+    font-family: "OpenDyslexic Mono";
+}
+
+header>div {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+header>div>h1 {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+header>div>h1>a:link {
+    color: #a0a08b;
+}
+
+header>div>h1>a:visited {
+    color: #a0a08b;
+}
+
+header>div>h1>a:hover {
+    color: #e9efec;
+}
+
+main {
+    color: #a0a08b;
+    margin: 2%;
+}
