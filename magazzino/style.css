@@ -16,44 +16,48 @@ body {
     background-color: #211e20;
 }
 
-header {
-    height: 13%;
+#headerDiv {
+    height: 100px;
     color: #a0a08b;
     display: block;
-    /* box-shadow: 0px 1px 0px 1px !important; /* S1m0Rembr: hor offset, ver offset, blu amount, rad amount */
-    border-bottom: 2px solid;
-    border-color: #555568;
+    /* Uncomment if you need the shadow effect */
+    /* box-shadow: 0px 1px 0px 1px #555568 !important; */
+    /*border-bottom: 2px solid #555568;*/
+    font-size: 60%;
 }
 
-#dyslexia-toggle {
+.dyslexia-toggle {
     font-family: "OpenDyslexic Mono";
+    font-weight: 800;
+    font-size: large;
 }
 
-header>div {
+#headerDiv>div {
     display: flex;
     align-items: center;
-    align-content: center;
     justify-content: center;
 }
 
-header>div>h1 {
+#headerDiv>div>h1 {
     padding-left: 5%;
     padding-right: 5%;
 }
 
-header>div>h1>a:link {
+#headerDiv>div>h1>a:link,
+#headerDiv>div>h1>a:visited {
     color: #a0a08b;
 }
 
-header>div>h1>a:visited {
-    color: #a0a08b;
-}
-
-header>div>h1>a:hover {
+#headerDiv>div>h1>a:hover {
     color: #e9efec;
 }
 
-main {
+#mainDiv {
     color: #a0a08b;
     margin: 2%;
+}
+
+#separator {
+    height: 2px;
+    background-color:  #555568;
 }

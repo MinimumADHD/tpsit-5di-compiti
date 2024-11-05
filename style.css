@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(fonts/JetBrainsMono-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "OpenDyslexic Mono";
+    src: url(fonts/OpenDyslexicMono-Regular.woff2) format("woff2");
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "JetBrains Mono";
+    font-size: 11;
+    margin: 0;
+    background-color: rgb(48, 48, 48);
+    color: rgb(243, 243, 243);
+}
+
+#mainDiv {
+    margin: 20px;
+}
+
+#palette_showcase {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#palette_container {
+    width: 700px;
+    font-weight: bolder;
+    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px, rgba(0, 0, 0, 0.24) 0px -3px 8px, rgba(0, 0, 0, 0.24) 3px 0px 8px, rgba(0, 0, 0, 0.24) -3px 0px 8px;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: solid;
+    border-color: #f3f3f34f;
+    /* Adjusted to make columns more even */
+    /*gap: 10px;*/
+    /* Optional: adds spacing between columns */
+}
+
+.palette_color {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    height: 35px;
+}
+
+#headerDiv {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+#headerDiv>h1 {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#directories_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 1000px;
+    height: 500px;
+    border: 2px solid;
+    border-color: #f3f3f34f;
+}
+
+#divdiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+}
+
+.hyperlink {
+    color: #3744FC;
+}
+
+.hyperlink:link {
+    color: #3744FC;
+}
+
+.hyperlink:visited {
+    color: #3744FC;
+}
+
+.hyperlink:hover {
+    color: #2331f1;
+}
