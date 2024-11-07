@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'info.jsonc', true);
+    xhr.open('GET', 'https://raw.githubusercontent.com/MinimumADHD/tpsit-5di-compiti/refs/heads/main/magazzino/info.jsonc', true);
     xhr.onload = function() {
         if (this.status === 200) {
             const prodotti = JSON.parse(this.responseText);

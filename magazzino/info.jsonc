@@ -1,5 +1,5 @@
 [
-    {"nome": "Prodotto 1", "prezzo_acquisto": 10, "immagine": "url_immagine_1.jpg"},
-    {"nome": "Prodotto 2", "prezzo_acquisto": 20, "immagine": "url_immagine_2.jpg"},
-    {"nome": "Prodotto 3", "prezzo_acquisto": 30, "immagine": "url_immagine_3.jpg"}
+    {"nome": "Prodotto 1", "prezzo_acquisto": 10, "immagine": "https://github.com/MinimumADHD/tpsit-5di-compiti/blob/main/images/IMG20241018165626.jpg"},
+    {"nome": "Prodotto 2", "prezzo_acquisto": 20, "immagine": "https://github.com/MinimumADHD/tpsit-5di-compiti/blob/main/images/wallhaven-d6y12l.jpg"},
+    {"nome": "Prodotto 3", "prezzo_acquisto": 30, "immagine": "https://github.com/MinimumADHD/tpsit-5di-compiti/blob/main/images/wallhaven-d6y12l.jpg"}
 ]
