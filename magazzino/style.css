@@ -1,63 +1,48 @@
-@font-face {
-    font-family: "JetBrains Mono";
-    src: url(../fonts/JetBrainsMono-Regular.woff2) format("woff2");
-}
-
-@font-face {
-    font-family: "OpenDyslexic Mono";
-    src: url(../fonts/OpenDyslexicMono-Regular.woff2) format("woff2");
-}
-
-html,
 body {
-    height: 100%;
-    font-family: "JetBrains Mono";
-    margin: 0;
-    background-color: #211e20;
+    font-family: Arial, sans-serif;
+    margin: 20px;
 }
 
-#headerDiv {
-    height: 100px;
-    color: #a0a08b;
-    display: block;
-    /* Uncomment if you need the shadow effect */
-    /* box-shadow: 0px 1px 0px 1px #555568 !important; */
-    /*border-bottom: 2px solid #555568;*/
-    font-size: 60%;
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.dyslexia-toggle {
-    font-family: "OpenDyslexic Mono";
-    font-weight: 800;
-    font-size: large;
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-#headerDiv>div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+button:hover {
+    background-color: #45a049;
 }
 
-#headerDiv>div>h1 {
-    padding-left: 5%;
-    padding-right: 5%;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-#headerDiv>div>h1>a:link,
-#headerDiv>div>h1>a:visited {
-    color: #a0a08b;
+table, th, td {
+    border: 1px solid #ddd;
 }
 
-#headerDiv>div>h1>a:hover {
-    color: #e9efec;
+th, td {
+    padding: 12px;
+    text-align: left;
 }
 
-#mainDiv {
-    color: #a0a08b;
-    margin: 2%;
+th {
+    background-color: #f2f2f2;
 }
 
-#separator {
-    height: 2px;
-    background-color:  #555568;
+img {
+    max-width: 50px;
+    height: auto;
 }

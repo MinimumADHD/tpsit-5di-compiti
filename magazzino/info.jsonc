@@ -1,0 +1,5 @@
+[
+    {"nome": "Prodotto 1", "prezzo_acquisto": 10, "immagine": "url_immagine_1.jpg"},
+    {"nome": "Prodotto 2", "prezzo_acquisto": 20, "immagine": "url_immagine_2.jpg"},
+    {"nome": "Prodotto 3", "prezzo_acquisto": 30, "immagine": "url_immagine_3.jpg"}
+]
