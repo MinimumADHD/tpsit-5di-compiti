@@ -35,7 +35,7 @@ function creaTabella(prodotti) {
         const img = document.createElement('img');
         img.src = prodotto.immagine;
         img.alt = prodotto.nome;
-        img.style.width = '50px'; // Imposta la larghezza dell'immagine
+        img.style.width = '50px';
         imgCell.appendChild(img);
     });
 
