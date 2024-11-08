@@ -1,5 +1,17 @@
 [
-    {"nome": "Prodotto 1", "prezzo_acquisto": 10, "immagine": "https://github.com/MinimumADHD/tpsit-5di-compiti/blob/main/images/IMG20241018165626.jpg"},
-    {"nome": "Prodotto 2", "prezzo_acquisto": 20, "immagine": "https://github.com/MinimumADHD/tpsit-5di-compiti/blob/main/images/wallhaven-d6y12l.jpg"},
-    {"nome": "Prodotto 3", "prezzo_acquisto": 30, "immagine": "https://github.com/MinimumADHD/tpsit-5di-compiti/blob/main/images/wallhaven-d6y12l.jpg"}
+    {
+        "nome": "Armando",
+        "prezzo_acquisto": 3,
+        "immagine": "https://www.pastarmando.it/images/prodotti/_lineaBig/Fusillo-linea-award-22-update.png"
+    },
+    {
+        "nome": "Begel",
+        "prezzo_acquisto": 5,
+        "immagine": "https://media-cdn.tripadvisor.com/media/photo-s/03/e8/6c/6f/chap-s-grille.jpg"
+    },
+    {
+        "nome": "Miva Rathias",
+        "prezzo_acquisto": 0.55,
+        "immagine": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/verstappen"
+    }
 ]

@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prodotti</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Magazzino</title>
 </head>
+
 <body>
-    <input type="text" id="percentualeRicarico" placeholder="Percentuale di ricarico">
-    <button id="calcola">Calcola</button>
+    <div id="headerDiv">
+        <h1><a href="../index.htm" class="hyperlink">Pagina Principale</a></h1>
+        <h1>Magazzino</h1>
+        <h1><a href="https://github.com/MinimumADHD/tpsit-5di-compiti" class="hyperlink">Repo GitHub</a></h1>
+    </div>
+    <div id="separatorDiv">
+    </div>
+    <div id="mainDiv">
+        <!-- tr stands for table row, th stands for table header, and td stands for table data....-->
+        <div>
+            <input type="text" id="input_percentage_recharge" placeholder="Perc. Ricarica">
+            <input type="submit" value="Conferma" id="confirm_btn">    
+        </div>
+        <div>
+
+        </div>
+        <table id="data-json-table">
+            <tr>
+                <th>Prodotto</th>
+                <th>Prezzo</th>
+            </tr>
+        </table>
+    </div>
 </body>
+
 </html>

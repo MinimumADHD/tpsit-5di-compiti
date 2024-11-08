@@ -100,3 +100,9 @@ body {
 .hyperlink:hover {
     color: #2331f1;
 }
+
+#dealerImg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
