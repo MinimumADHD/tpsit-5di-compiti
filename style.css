@@ -85,6 +85,10 @@ body {
     padding: 30px;
 }
 
+th td {
+    padding: 10px;
+}
+
 .hyperlink {
     color: #3744FC;
 }
