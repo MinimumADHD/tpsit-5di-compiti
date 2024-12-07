@@ -7,7 +7,6 @@
     <title>Ecommerce 2.0</title>
   </head>
   <body class="bg-[#303030] font-jetbrains text-[#F3F3F3] min-h-screen">
-    <!-- Header -->
     <nav
       id="headerDiv"
       class="h-16 flex justify-center items-center gap-8 px-4 bg-[#303030] border-b border-[#F7E600]"
@@ -21,11 +20,7 @@
       <h1 class="text-xl font-extrabold tracking-wide">Ecommerce 2.0</h1>
       <p class="p-2 text-sm">Hello!</p>
     </nav>
-
-    <!-- Separator -->
     <div id="separatorDiv" class="h-[2px] bg-[#F7E600]"></div>
-
-    <!-- Main Content -->
     <main
       id="mainDiv"
       class="flex flex-col md:flex-row justify-center items-center gap-4 p-6 text-center"
@@ -47,7 +42,10 @@
       </button>
 
       <!-- Table -->
-      <table id="tableForProducts" class="bg-[#303030] border-collapse w-full mt-8 text-left">
+      <table
+        id="tableForProducts"
+        class="bg-[#303030] border-collapse w-full mt-8 text-left"
+      >
         <thead>
           <tr class="bg-[#F7E600] text-[#303030]">
             <th class="p-2">Prodotto</th>
@@ -58,36 +56,37 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="border-b border-[#F7E600]">
-            <td class="p-2">Prodotto</td>
-            <td class="p-2">Prezzo</td>
-            <td class="p-2">Sconto</td>
-            <td class="p-2">Immagine</td>
-            <td class="p-2">JSONC File</td>
+          <tr class="border-b border-[#F7E600]" id="p1">
+            <td class="p-2" id="prodotto">Prodotto</td>
+            <td class="p-2" id="prezzo">Prezzo</td>
+            <td class="p-2" id="sconto">Sconto</td>
+            <td class="p-2" id="img">Immagine</td>
+            <td class="p-2" id="jsonfile">JSONC File</td>
           </tr>
-          <tr class="border-b border-[#F7E600]">
-            <td class="p-2">Prodotto</td>
-            <td class="p-2">Prezzo</td>
-            <td class="p-2">Sconto</td>
-            <td class="p-2">Immagine</td>
-            <td class="p-2">JSONC File</td>
+          <tr class="border-b border-[#F7E600]" id="p2">
+            <td class="p-2" id="prodotto">Prodotto</td>
+            <td class="p-2" id="prezzo">Prezzo</td>
+            <td class="p-2" id="sconto">Sconto</td>
+            <td class="p-2" id="img">Immagine</td>
+            <td class="p-2" id="jsonfile">JSONC File</td>
           </tr>
-          <tr class="border-b border-[#F7E600]">
-            <td class="p-2">Prodotto</td>
-            <td class="p-2">Prezzo</td>
-            <td class="p-2">sklkddjkjoewokowkwl</td>
-            <td class="p-2">Immagine</td>
-            <td class="p-2">JSONC File</td>
+          <tr class="border-b border-[#F7E600]" id="p3">
+            <td class="p-2" id="prodotto">Prodotto</td>
+            <td class="p-2" id="prezzo">Prezzo</td>
+            <td class="p-2" id="sconto">Sconto</td>
+            <td class="p-2" id="img">Immagine</td>
+            <td class="p-2" id="jsonfile">JSONC File</td>
           </tr>
-          <tr class="border-b border-[#F7E600]">
-            <td class="p-2">Prodotto</td>
-            <td class="p-2">Prezzo</td>
-            <td class="p-2">Sconto</td>
-            <td class="p-2">Immagine</td>
-            <td class="p-2">JSONC File</td>
+          <tr class="border-b border-[#F7E600]" id="p4">
+            <td class="p-2" id="prodotto">Prodotto</td>
+            <td class="p-2" id="prezzo">Prezzo</td>
+            <td class="p-2" id="sconto">Sconto</td>
+            <td class="p-2" id="img">Immagine</td>
+            <td class="p-2" id="jsonfile">JSONC File</td>
           </tr>
         </tbody>
       </table>
     </main>
   </body>
+  <script src="index.js"></script>
 </html>
