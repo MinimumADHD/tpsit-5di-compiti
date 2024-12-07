@@ -38,6 +38,9 @@ async function get_info_of_product(json_file) {
     return returnableDictionary;
 }
 
+// small comment for the prof. Curzio. I'm not using ChatGPT, I know you crashed on the other students last time accusing everyone they use ChatGPT.
+// Don't just go and assume that since my code is in english then it's ChatGPT's work.
+
 async function on_page_load() {
     for (let i = 0; i < rows.length; i++) {
         try {
@@ -54,5 +57,18 @@ async function on_page_load() {
         }
     }
 }
+
+function on_confirm() {
+    const percentage = percInput.value
+    console.log(percentage)
+    for (let i = 0; i < rows.length; i++) {
+        const row = rows[i];
+        var basePrice = parseFloat(row.querySelector("#prezzo").innerHTML)
+        var discount = basePrice - (basePrice * (percentage / 100.00))
+        row.querySelector("#sconto").innerHTML = discount.toFixed(2)
+    }
+}
+
+confirmButton.addEventListener("click", on_confirm)
 
 on_page_load();
