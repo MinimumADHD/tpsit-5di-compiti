@@ -1,28 +1,58 @@
 const jsonPaths = [
-  "./json/p1.jsonc",
-  "./json/p2.jsonc",
-  "./json/p3.jsonc",
-  "./json/p4.jsonc",
-];
+    "https://raw.githubusercontent.com/MinimumADHD/tpsit-5di-compiti/refs/heads/main/ecommerce-2/json/p1.json",
+    "https://raw.githubusercontent.com/MinimumADHD/tpsit-5di-compiti/refs/heads/main/ecommerce-2/json/p2.json",
+    "https://raw.githubusercontent.com/MinimumADHD/tpsit-5di-compiti/refs/heads/main/ecommerce-2/json/p3.json",
+    "https://raw.githubusercontent.com/MinimumADHD/tpsit-5di-compiti/refs/heads/main/ecommerce-2/json/p4.json",
+]
 
-// just learnt about type annotations which is apparently possible in JS.
+const percInput = document.getElementById("inputPercentage")
+const confirmButton = document.getElementById("confirmButton")
+
+const rows = [
+    document.getElementById("p1"),
+    document.getElementById("p2"),
+    document.getElementById("p3"),
+    document.getElementById("p4")
+]
+
 /**
- * Returns a dictionary containing the stuff from inside a json (or jsonc) file (only 1st layer)
- * oh btw prof. Curzio i'm not using chatgpt, since you crashed out last time and accused everyone of using it. i am just capabble of coding and coding in english, since i speak english.
+ * Fetches data from a JSON file and returns a dictionary with all key-value pairs as strings.
  *
  * @param {string} json_file
- * @returns {*}
+ * @returns {Promise<Object>}
  */
 async function get_info_of_product(json_file) {
-    var returnableDictionary = {}
-    var file = await fetch(json_file)
+    const returnableDictionary = {}
+    const response = await fetch(json_file)
 
-    if (!file) {
-        console.error(`Selected file ${json_file} doesn't exist.`)
-        return
+    if (!response.ok) {
+        throw new Error("ERROR READING GIVEN FILE: " + json_file)
     }
 
-    return file
+    const data = await response.json()
+    for (const key in data) {
+        if (data.hasOwnProperty(key)) {
+            returnableDictionary[key] = String(data[key])
+        }
+    }
+    return returnableDictionary
 }
 
-console.log(get_info_of_product(jsonPaths[0]))
+function on_page_load() {
+    for (var i = 0; i <= rows.length(); i++){
+        rows[i] = (async () => {
+            await get_info_of_product(jsonPaths[i])
+        })()
+    }
+}
+
+on_page_load()
+
+/*
+(async () => {
+    const productInfo = await get_info_of_product(jsonPaths[0])
+    console.log(productInfo["product"])
+    console.log(productInfo["price"])
+    console.log(productInfo["img"])
+})()*/
+// JUST TESTING SOME STUFF OUT....

@@ -1,92 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../tailwindOutput.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="../tailwindOutput.css" rel="stylesheet"/>
     <title>Ecommerce 2.0</title>
-  </head>
-  <body class="bg-[#303030] font-jetbrains text-[#F3F3F3] min-h-screen">
-    <nav
-      id="headerDiv"
-      class="h-16 flex justify-center items-center gap-8 px-4 bg-[#303030] border-b border-[#F7E600]"
-    >
-      <a
-        href="../index.htm"
-        class="p-2 text-sm font-medium text-[#3744FC] hover:text-blue-300 transition-colors"
-      >
+</head>
+<body class="bg-[#303030] font-jetbrains text-[#F3F3F3] min-h-screen">
+<nav class="h-16 flex justify-between items-center gap-8 px-4 bg-[#303030] border-b border-[#F7E600]" id="headerDiv">
+    <a class="p-2 text-sm font-medium text-[#3744FC] hover:text-blue-300 transition-colors" href="../index.htm">
         Pag. Principale
-      </a>
-      <h1 class="text-xl font-extrabold tracking-wide">Ecommerce 2.0</h1>
-      <p class="p-2 text-sm">Hello!</p>
-    </nav>
-    <div id="separatorDiv" class="h-[2px] bg-[#F7E600]"></div>
-    <main
-      id="mainDiv"
-      class="flex flex-col md:flex-row justify-center items-center gap-4 p-6 text-center"
-    >
-      <div class="flex flex-col items-center gap-4">
-        <p class="text-lg font-medium">Hello</p>
-        <input
-          type="text"
-          id="inputPercentage"
-          placeholder="%"
-          class="w-16 h-16 text-center rounded bg-[#F3F3F3] text-[#303030] border-2 border-[#F7E600] focus:ring-2 focus:ring-[#3744FC] focus:outline-none"
-        />
-      </div>
-      <button
-        id="confirmButton"
-        class="px-4 py-2 bg-[#3744FC] text-sm font-medium text-white rounded-lg shadow hover:bg-blue-500 transition"
-      >
-        Confirm
-      </button>
+    </a>
+    <h1 class="text-xl font-extrabold tracking-wide">Ecommerce 2.0</h1>
+    <p class="p-2 text-sm">Hello!</p>
+</nav>
 
-      <!-- Table -->
-      <table
-        id="tableForProducts"
-        class="bg-[#303030] border-collapse w-full mt-8 text-left"
-      >
-        <thead>
-          <tr class="bg-[#F7E600] text-[#303030]">
-            <th class="p-2">Prodotto</th>
-            <th class="p-2">Prezzo</th>
-            <th class="p-2">Sconto</th>
-            <th class="p-2">Immagine</th>
-            <th class="p-2">JSONC File</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="border-b border-[#F7E600]" id="p1">
-            <td class="p-2" id="prodotto">Prodotto</td>
-            <td class="p-2" id="prezzo">Prezzo</td>
-            <td class="p-2" id="sconto">Sconto</td>
-            <td class="p-2" id="img">Immagine</td>
-            <td class="p-2" id="jsonfile">JSONC File</td>
-          </tr>
-          <tr class="border-b border-[#F7E600]" id="p2">
-            <td class="p-2" id="prodotto">Prodotto</td>
-            <td class="p-2" id="prezzo">Prezzo</td>
-            <td class="p-2" id="sconto">Sconto</td>
-            <td class="p-2" id="img">Immagine</td>
-            <td class="p-2" id="jsonfile">JSONC File</td>
-          </tr>
-          <tr class="border-b border-[#F7E600]" id="p3">
-            <td class="p-2" id="prodotto">Prodotto</td>
-            <td class="p-2" id="prezzo">Prezzo</td>
-            <td class="p-2" id="sconto">Sconto</td>
-            <td class="p-2" id="img">Immagine</td>
-            <td class="p-2" id="jsonfile">JSONC File</td>
-          </tr>
-          <tr class="border-b border-[#F7E600]" id="p4">
-            <td class="p-2" id="prodotto">Prodotto</td>
-            <td class="p-2" id="prezzo">Prezzo</td>
-            <td class="p-2" id="sconto">Sconto</td>
-            <td class="p-2" id="img">Immagine</td>
-            <td class="p-2" id="jsonfile">JSONC File</td>
-          </tr>
-        </tbody>
-      </table>
-    </main>
-  </body>
-  <script src="index.js"></script>
+<div class="h-[2px] bg-[#F7E600]" id="separatorDiv"></div>
+
+<main class="flex flex-col md:flex-row justify-center items-center gap-4 p-6 text-center min-h-screen h-[100%] flex-grow" id="mainDiv">
+    <div class="grid grid-cols-1 grid-rows-2 w-auto">
+        <div class="flex flex-col items-center gap-4 w-auto">
+            <p class="text-lg font-medium">Inserisci la percentuale di sconto.</p>
+            <input
+                    class="w-16 h-16 text-center rounded bg-[#F3F3F3] text-[#303030] border-2 border-[#F7E600] focus:ring-2 focus:ring-[#3744FC] focus:outline-none"
+                    id="inputPercentage"
+                    placeholder="%"
+                    type="number"
+            />
+            <button
+                    class="px-4 py-2 bg-[#3744FC] text-sm font-medium text-white rounded-lg shadow hover:bg-blue-500 transition"
+                    id="confirmButton"
+            >
+                Confirm
+            </button>
+        </div>
+        <table class="bg-[#303030] border-collapse w-full mt-8 text-left" id="tableForProducts">
+            <thead>
+            <tr class="bg-[#F7E600] text-[#303030] h-[60px]">
+                <th class="p-2">Prodotto</th>
+                <th class="p-2">Prezzo</th>
+                <th class="p-2">Sconto</th>
+                <th class="p-2">Immagine</th>
+                <th class="p-2">JSONC File</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="border-b border-[#F7E600] h-[60px]" id="p1">
+                <td class="p-2 w-auto" id="prodotto">Prodotto</td>
+                <td class="p-2 w-auto" id="prezzo">Prezzo</td>
+                <td class="p-2 w-auto" id="sconto">Sconto</td>
+                <td class="p-2 w-auto" id="img">Immagine</td>
+                <td class="p-2 w-auto" id="jsonfile">JSONC File</td>
+            </tr>
+            <tr class="border-b border-[#F7E600] h-[60px]" id="p2">
+                <td class="p-2 w-auto" id="prodotto">Prodotto</td>
+                <td class="p-2 w-auto" id="prezzo">Prezzo</td>
+                <td class="p-2 w-auto" id="sconto">Sconto</td>
+                <td class="p-2 w-auto" id="img">Immagine</td>
+                <td class="p-2 w-auto" id="jsonfile">JSONC File</td>
+            </tr>
+            <tr class="border-b border-[#F7E600] h-[60px]" id="p3">
+                <td class="p-2 w-auto" id="prodotto">Prodotto</td>
+                <td class="p-2 w-auto" id="prezzo">Prezzo</td>
+                <td class="p-2 w-auto" id="sconto">Sconto</td>
+                <td class="p-2 w-auto" id="img">Immagine</td>
+                <td class="p-2 w-auto" id="jsonfile">JSONC File</td>
+            </tr>
+            <tr class="border-b border-[#F7E600] h-[60px]" id="p4">
+                <td class="p-2 w-auto" id="prodotto">Prodotto</td>
+                <td class="p-2 w-auto" id="prezzo">Prezzo</td>
+                <td class="p-2 w-auto" id="sconto">Sconto</td>
+                <td class="p-2 w-auto" id="img">Immagine</td>
+                <td class="p-2 w-auto" id="jsonfile">JSONC File</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+</body>
+<script src="index.js"></script>
 </html>
