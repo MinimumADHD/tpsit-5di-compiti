@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.16"
+  },
+  "scripts": {
+    "watch-twcss": "tailwindcss -i ./tailwindInput.css -o ./tailwindOutput.css --watch",
+    "compile-twcss": "tailwindcss -i ./tailwindInput.css -o ./tailwindOutput.css"
+  }
+}
