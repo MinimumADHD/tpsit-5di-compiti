@@ -1,0 +1,24 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<info>
+    <person>
+        <name>Pietro</name>
+        <last_name>Villani</last_name>
+        <home_address>Via NoSignor Yuri Gagarin, 13</home_address>
+        <city>Palermo MI</city>
+        <phone_number>+39 023 229 3413</phone_number>
+    </person>
+    <person>
+        <name>Giorgio</name>
+        <last_name>Maldestri</last_name>
+        <home_address>Via Rossa, 56</home_address>
+        <city>Villapizzone MI</city>
+        <phone_number>+39 888 888 8888</phone_number>
+    </person>
+    <person>
+        <name>Giorgio W</name>
+        <last_name>Cespuglio</last_name>
+        <home_address>Via 1600 Foresta di Penn</home_address>
+        <city>USA Fattoria Del Lavaggio</city>
+        <phone_number>+01 225 6622 2234</phone_number>
+    </person>
+</info>
