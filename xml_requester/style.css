@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Windows95Regular";
+    src: url(../fonts/Windows95Regular.woff2) format("woff2");
+}
+
+html {
+    display: flex;
+}
+
+body {
+    font-family: "Windows95Regular";
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+td {
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid #858585;
+    border-bottom: 2px solid #858585;
+    margin: 2px;
+}
+
+#draggable_window_xml {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 0px solid #d3d3d3;
+    text-align: center;
+    width: auto;
+    box-sizing: border-box;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid #858585;
+    border-bottom: 2px solid #858585;
+    background-color: #C0C0C0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#window_header {
+    margin: 1%;
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    width: 80%;
+    background-color: #000181;
+    color: #fff;
+}
+
+#info_table {
+    margin: auto;
+    /*border: 2px solid;*/
+}
+
+#desktop {
+    height: 100%;
+    background-image: url(img/Bliss_2025.png);
+    background-size: 100vw;
+    background-color: #CCCCCC;
+    height: 94vh;
+}
+
+#toolbar {
+    background-color: aliceblue;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#WindowsButton {
+    margin: 2px;
+    width: 5%;
+    height: 90%;
+}
+
+#clocktime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4px;
+    border-top: 2px solid #858585;
+    border-left: 2px solid #858585;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    height: 75%;
+    width: 7%;
+}
