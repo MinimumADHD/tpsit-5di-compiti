@@ -7,18 +7,25 @@ const tableBody = document.getElementById('table_data');
 
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://raw.githubusercontent.com/MinimumADHD/tpsit-5di-compiti/refs/heads/main/xml_requester/data.xml", true);
-xhr.responseType = "document";
-
 xhr.onload = function () {
     if (xhr.status === 200) {
-        var xmlDoc = xhr.responseXML;
+        var xmlDoc;
+        try {
+            var parser = new DOMParser();
+            xmlDoc = parser.parseFromString(xhr.responseText, "text/xml");
+        } catch (error) {
+            console.error("Parsing fallito:", error);
+            return;
+        }
+        // potevo anchew usare un document.InnerHTML per inserire i dati, ma forse non è il metodo più originale con il js di oggi
+        // sos
         var licenses = xmlDoc.getElementsByTagName("DriversLicense");
         for (var i = 0; i < licenses.length; i++) {
             var license = licenses[i];
-            var name = license.getElementsByTagName("Name")[0].textContent.trim();
-            var address = license.getElementsByTagName("Address")[0].textContent.trim();
-            var sex = license.getElementsByTagName("Sex")[0].textContent.trim();
-            var expiry = license.getElementsByTagName("ExpiryDate")[0].textContent.trim();
+            var name = license.getElementsByTagName("Name")[0].textContent;
+            var address = license.getElementsByTagName("Address")[0]?.textContent;
+            var sex = license.getElementsByTagName("Sex")[0].textContent;
+            var expiry = license.getElementsByTagName("ExpiryDate")[0].textContent;
             var row = document.createElement('tr');
             var nameCell = document.createElement('td');
             nameCell.textContent = name;
@@ -35,12 +42,12 @@ xhr.onload = function () {
             tableBody.appendChild(row);
         }
     } else {
-        console.error("Failed to load XML file. Status:", xhr.status);
+        console.error("XML non caricato:", xhr.status);
     }
 };
 
 xhr.onerror = function () {
-    console.error("There was an error while making the request.");
+    console.error("Errore per richiesta.");
 };
 
 xhr.send();
