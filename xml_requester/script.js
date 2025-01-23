@@ -6,7 +6,7 @@ dragElement(windowDiv, 'window_header');
 const tableBody = document.getElementById('table_data');
 
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://raw.githubusercontent.com/MinimumADHD/tpsit-5di-compiti/refs/heads/main/xml_requester/data.xml", true);
+xhr.open("GET", "https://minimumadhd.github.io/tpsit-5di-compiti/xml_requester/data.xml", true);
 xhr.responseType = "document";
 
 xhr.onload = function () {
