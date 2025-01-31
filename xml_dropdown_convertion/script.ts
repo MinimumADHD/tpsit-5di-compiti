@@ -1,4 +1,6 @@
 const xml_url: string = "https://raw.githubusercontent.com/MinimumADHD/tpsit-5di-compiti/refs/heads/main/xml_dropdown_convertion/eurofxref-daily.xml";
+// const proxy_url = "https://cors-anywhere.herokuapp.com/";
+// const xml_url: string = proxy_url + "http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml"
 const drop_down_list = document.getElementById("currencies") as HTMLSelectElement;
 const output_currency_value = document.getElementById("output_currency_value") as HTMLParagraphElement
 const currency_input = document.getElementById("currency_input") as HTMLInputElement
