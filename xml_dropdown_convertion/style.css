@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Windows95Regular";
+    src: url(../fonts/Windows95Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "JetBrainsMono";
+    src: url(../fonts/JetBrainsMono-Regular.woff2) format("woff2");
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrainsMono", monospace;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+#header {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ddd;
+}
+
+#main {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+#cdiv {
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
