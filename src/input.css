@@ -16,6 +16,16 @@
 }
 
 @theme {
-    --font-jetbrains: "JetBrains Mono",
-    --font-opendyslexic: "Open Dyslexic Mono"
+    --font-jetbrains: "JetBrains Mono";
+    --font-opendyslexic: "Open Dyslexic Mono";
+    --font-windows95: "Windows 95";
+    /* Berry Shake theme from Lospec https://lospec.com/palette-list/berry-shake */
+    --color-berryshake-white: #ffffff;
+    --color-berryshake-black: #2e2e49;
+    --color-berryshake-purple: #b200ff;
+    --color-berryshake-dimpurple: #53355e;
+    --color-berryshake-pink: #ff156b;
+    --color-berryshake-dimpink: #a30054;
+    --color-berryshake-green: #62ff89;
+    --color-berryshake-dimgreen: #227f5e;
 }
