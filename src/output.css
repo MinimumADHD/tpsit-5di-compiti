@@ -201,6 +201,9 @@
   .pointer-events-none {
     pointer-events: none;
   }
+  .\!visible {
+    visibility: visible !important;
+  }
   .collapse {
     visibility: collapse;
   }
@@ -230,6 +233,9 @@
     overflow: visible;
     clip: auto;
     white-space: normal;
+  }
+  .\!relative {
+    position: relative !important;
   }
   .absolute {
     position: absolute;
@@ -452,6 +458,9 @@
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
+  }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
@@ -1331,6 +1340,9 @@
   .object-top {
     object-position: top;
   }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -1882,6 +1894,9 @@
   .outline-solid {
     --tw-outline-style: solid;
     outline-style: solid;
+  }
+  .\[host\:\]port\] {
+    host: ]port;
   }
   .\[keywords\:node-addon-api\] {
     keywords: node-addon-api;
