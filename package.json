@@ -1,9 +1,10 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.4.16"
-  },
   "scripts": {
-    "watch-twcss": "tailwindcss -i ./tailwindInput.css -o ./tailwindOutput.css --watch",
-    "compile-twcss": "tailwindcss -i ./tailwindInput.css -o ./tailwindOutput.css"
+    "tailwind-watch": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "tailwind-compile": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.9",
+    "tailwindcss": "^4.0.9"
   }
 }

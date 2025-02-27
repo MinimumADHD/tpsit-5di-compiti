@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Open Dyslexic Mono";
+    src: url("../fonts/OpenDyslexicMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Windows 95";
+    src: url("../fonts/Windows95Regular.woff2") format("woff2");
+}
+
+@theme {
+    --font-jetbrains: "JetBrains Mono",
+    --font-opendyslexic: "Open Dyslexic Mono"
+}
